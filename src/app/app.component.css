@@ -1,0 +1,14 @@
+header{
+    border-bottom: 3px solid #000;
+}
+
+footer{
+    border-top: 3px solid #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.remove-inbuilt{
+    text-decoration: none;
+}

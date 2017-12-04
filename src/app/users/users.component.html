@@ -1,0 +1,25 @@
+<div class="container">
+  <h3>Users</h3>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>UserName</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let userInfo of userInfos"> 
+      <td>
+        {{ userInfo.name}}
+      </td>
+      <td>
+        {{ userInfo.email }}
+      </td>
+      <td>
+        {{ userInfo.userName }}
+      </td>
+    </tbody>
+  </table>
+
+  <a type="button" id="button" class="btn btn-primary " routerLink="/form">Back</a>
+</div>

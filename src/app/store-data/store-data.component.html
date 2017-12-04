@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>
+    ToDo List
+  </h3>
+  <form action="get" class="form-inline">
+    <input type="text" id="inputData" class="form-control" #arg placeholder="Enter data" >
+    <input type="reset" class="form-control" (click)='add(arg.value)' value="Submit">
+    <input type="reset" class="btn form-control btn-danger" (click)='delete()' value="Delete All">
+  </form>
+  <div class="myClass">
+  {{ elseBlock }}
+  </div>
+  <div *ngFor='let data of dataAdded'> 
+    <div>
+      <span class="col-sm-10">
+        {{ data }}
+      </span>
+      <input type="button" class="btn btn-danger" value="X" (click)='remove($event)'>
+    </div>
+  </div>
+</div>
